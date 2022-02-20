@@ -90,10 +90,18 @@ export const NextButtonTitle = styled.Text`
 export const JumpButton = styled.TouchableOpacity`
   margin-bottom: 72px;
   margin-top: 32px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 `
 
 export const JumpButtonTitle = styled.Text`
   color: ${({ theme }) => theme.colors.title};
   font-family: ${({ theme }) => theme.fonts.regular};
   font-size: 16px;
+`
+
+export const Icon = styled.View`
+  margin-right: 8px;
 `

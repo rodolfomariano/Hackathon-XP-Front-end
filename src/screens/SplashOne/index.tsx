@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
+import { FontAwesome } from '@expo/vector-icons'
+
 import { Ionicons } from '@expo/vector-icons'
 
 import {
@@ -17,6 +19,7 @@ import {
   NextButtonTitle,
   JumpButton,
   JumpButtonTitle,
+  Icon
 } from './styles'
 
 export function SplashOne() {
@@ -112,6 +115,10 @@ export function SplashOne() {
         </NextButton>
 
         <JumpButton>
+          <Icon>
+            <FontAwesome name="circle-thin" size={20} color="#F7F7F7" />
+          </Icon>
+
           <JumpButtonTitle>
             Pular essa etapa
           </JumpButtonTitle>

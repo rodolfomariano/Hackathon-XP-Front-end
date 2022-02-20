@@ -61,44 +61,28 @@ export function HomeOpenFinance() {
 
       <Main>
         <BannerContainer>
-          <Banner />
+          <Banner
+            source={{
+              uri: 'https://firebasestorage.googleapis.com/v0/b/imagens-3dce0.appspot.com/o/banneOpenFinance.png?alt=media&token=c20f0f43-eb31-4cc3-a985-1b38c3ee3257'
+            }}
+          />
         </BannerContainer>
 
         <BannerDescription>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptas omnis ullam consequuntur numquam libero iure ipsum quod iusto tempora voluptate, tempore atque autem error ea natus aut eaque. Error.
+          Além do controle e gerenciamento de um jeito fácil e seguro, aqui na XP você conta com as melhores dicas e ofertas para cultivar hábitos desejáveis de um bem estar financeiro.
         </BannerDescription>
 
         <GenericButton>
 
           <ButtonContent>
             <IconContainer>
-              <FontAwesome name="bank" size={24} color="#EEC02C" />
+              <Entypo name="heart-outlined" size={24} color="#EEC02C" />
             </IconContainer>
 
             <ButtonTextContainer>
-              <ButtonTitle>Meus compartilhamentos</ButtonTitle>
+              <ButtonTitle>Economia da emoção</ButtonTitle>
               <ButtonDescription>
-                Gerencie seus compartilhamentos
-              </ButtonDescription>
-
-            </ButtonTextContainer>
-          </ButtonContent>
-
-          <Entypo name="chevron-small-right" size={32} color="#F7F7F7" />
-
-        </GenericButton>
-
-        <GenericButton>
-
-          <ButtonContent>
-            <IconContainer>
-              <AntDesign name="pluscircle" size={24} color="#EEC02C" />
-            </IconContainer>
-
-            <ButtonTextContainer>
-              <ButtonTitle>Adicionar instituição</ButtonTitle>
-              <ButtonDescription>
-                Adicione novos dados
+                Acompanhe seu bem-estar financeiro
               </ButtonDescription>
 
             </ButtonTextContainer>
@@ -132,13 +116,13 @@ export function HomeOpenFinance() {
 
           <ButtonContent>
             <IconContainer>
-              <Entypo name="line-graph" size={24} color="#EEC02C" />
+              <FontAwesome name="bank" size={24} color="#EEC02C" />
             </IconContainer>
 
             <ButtonTextContainer>
-              <ButtonTitle>Economia da emoção</ButtonTitle>
+              <ButtonTitle>Meus compartilhamentos</ButtonTitle>
               <ButtonDescription>
-                Acompanhe seu bem-estar financeiro
+                Gerencie seus compartilhamentos
               </ButtonDescription>
 
             </ButtonTextContainer>
@@ -147,6 +131,27 @@ export function HomeOpenFinance() {
           <Entypo name="chevron-small-right" size={32} color="#F7F7F7" />
 
         </GenericButton>
+
+        <GenericButton>
+
+          <ButtonContent>
+            <IconContainer>
+              <AntDesign name="pluscircleo" size={24} color="#EEC02C" />
+            </IconContainer>
+
+            <ButtonTextContainer>
+              <ButtonTitle>Adicionar instituição</ButtonTitle>
+              <ButtonDescription>
+                Adicione novos dados
+              </ButtonDescription>
+
+            </ButtonTextContainer>
+          </ButtonContent>
+
+          <Entypo name="chevron-small-right" size={32} color="#F7F7F7" />
+
+        </GenericButton>
+
 
         <CardFinancialHealth>
           <CardFinancialHealthHeader>

@@ -43,7 +43,8 @@ export const BannerContainer = styled.View`
 `
 
 export const Banner = styled.Image`
-
+  width: 100%;
+  height: 172px;
 `
 
 export const BannerDescription = styled.Text`
