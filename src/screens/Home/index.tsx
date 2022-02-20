@@ -132,11 +132,11 @@ export function Home() {
         <ButtonTitle>Estatísticas</ButtonTitle>
       </OpenFinanceButton> */}
 
-      <OpenFinanceButton
+      {/* <OpenFinanceButton
         onPress={handleGoToStatistics}
       >
         <ButtonTitle>Estatísticas</ButtonTitle>
-      </OpenFinanceButton>
+      </OpenFinanceButton> */}
 
     </Container>
   )

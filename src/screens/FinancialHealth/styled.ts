@@ -10,13 +10,11 @@ export const Container = styled.View`
 `
 
 export const HeaderContainer = styled.View`
-  width: 100%;
-  height: ${RFPercentage(12)}px;
   position: relative;
-  background-color: ${({ theme }) => theme.colors.shape_200};
-
+  width: 100%;
+  margin-top: 36px;
+  
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 `
@@ -31,13 +29,13 @@ export const HeaderTitle = styled.Text`
   font-size: 20px;
 `
 
-export const Main = styled.View`
+export const Main = styled.ScrollView`
   padding-left: 24px;
   padding-right: 24px;
 `
 
 export const SelectMonthContainer = styled.View`
-  margin-top: 48px;
+  margin-top: 32px;
   
 
   display: flex;
@@ -52,12 +50,13 @@ export const SelectMonthContent = styled.View`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 `
 
 export const MonthTitle = styled.Text`
   color: ${({ theme }) => theme.colors.title};
-  font-size: 20px;
+  font-family: ${({ theme }) => theme.fonts.light};
+  font-size: 14px;
 `
 
 export const BackMonthButton = styled.TouchableOpacity`
@@ -75,6 +74,7 @@ export const List = styled.ScrollView`
 
 export const GraphContainer = styled.View`
   position: relative;
+  margin-top: 56px;
 `
 
 export const ResultContainer = styled.View`
@@ -97,4 +97,35 @@ export const Result = styled.Text`
   color: ${({ theme }) => theme.colors.title};
   font-size: 32px;
   font-family: ${({ theme }) => theme.fonts.bold};
+`
+
+export const ScoreResultContainer = styled.View`
+
+`
+
+export const Span = styled.Text`
+  color: ${({ theme }) => theme.colors.title};
+  font-size: 24px;
+  font-family: ${({ theme }) => theme.fonts.bold};
+`
+
+export const ScoreTitle = styled.Text`
+  color: ${({ theme }) => theme.colors.title};
+  font-size: 16px;
+  font-family: ${({ theme }) => theme.fonts.bold};
+`
+
+export const Description = styled.Text`
+  color: ${({ theme }) => theme.colors.text};
+  font-size: 12px;
+  font-family: ${({ theme }) => theme.fonts.regular};
+  line-height: 15px;
+  margin-top: 8px;
+`
+
+export const SpanDescription = styled.Text`
+  color: ${({ theme }) => theme.colors.icons};
+  font-size: 14px;
+  font-family: ${({ theme }) => theme.fonts.medium};
+  
 `

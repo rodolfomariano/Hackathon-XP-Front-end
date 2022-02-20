@@ -6,49 +6,97 @@ import {
   Container,
   CardHeader,
   CardTitle,
+  TextContent,
   SeeMoreButton,
   SpanDescription,
+  SpanDescriptionTitle,
   Span,
   PunctuationContainer,
   Punctuation,
+  SpanPunctuation,
   PunctuationBar,
+  TotalScoreContainer,
+  TotalScore,
   PunctuationStatus,
 } from './styled'
 
-export function CardSpent() {
+interface CardSpentProps {
+  cardTitle: string
+  abilityScore: number
+  behavioralScore: number
+}
+
+export function CardSpent({ cardTitle, abilityScore, behavioralScore }: CardSpentProps) {
   const [seeMoreIsOpen, setSeeMoreIsOpen] = useState(false)
-  const [punctuation, setPunctuation] = useState(80)
+
+  const [abilityPunctuation, setAbilityPunctuation] = useState(abilityScore)
+  const [behavioralPunctuation, setBehavioralPunctuation] = useState(behavioralScore)
 
   function handleSeeMore() {
     setSeeMoreIsOpen(!seeMoreIsOpen)
   }
 
   return (
-    <Container>
+    <Container
+      onPress={handleSeeMore}
+    >
       <CardHeader>
-        <CardTitle>Habilidade</CardTitle>
+        <TextContent>
+          <CardTitle>{cardTitle}</CardTitle>
+
+        </TextContent>
         <SeeMoreButton
           onPress={handleSeeMore}
         >
           {seeMoreIsOpen
-            ? <Entypo name="chevron-small-up" size={24} color="#F7F7F7" />
-            : <Entypo name="chevron-small-down" size={24} color="#F7F7F7" />
+            ? <Entypo name="chevron-small-down" size={24} color="#F7F7F7" />
+            : <Entypo name="chevron-small-right" size={24} color="#F7F7F7" />
           }
 
         </SeeMoreButton>
       </CardHeader>
       {seeMoreIsOpen && (
         <SpanDescription>
+          <SpanDescriptionTitle>
+            Habilidade:
+          </SpanDescriptionTitle>
+
           <Span>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quod molestias, aliquam dolores id iste a cum eos, officiis beatae perspiciatis veniam impedit deserunt magni natus provident tenetur fuga. Quasi?
+            Avalia a sua capacidade de buscar e entender informações importantes para a vida financeira.
           </Span>
 
           <PunctuationContainer>
-            <Punctuation>Sua pontuação: 56</Punctuation>
+            <Punctuation>Sua pontuação: <SpanPunctuation>{abilityPunctuation}</SpanPunctuation></Punctuation>
 
             <PunctuationBar>
-              <PunctuationStatus style={{ width: punctuation }} />
+              <PunctuationStatus style={{ width: `${abilityPunctuation}%` }} />
             </PunctuationBar>
+
+            <TotalScoreContainer>
+              <TotalScore>Pontuação máxima: <SpanPunctuation>100</SpanPunctuation></TotalScore>
+            </TotalScoreContainer>
+
+          </PunctuationContainer>
+
+          <SpanDescriptionTitle>
+            Comportamento:
+          </SpanDescriptionTitle>
+
+          <Span>
+            Avalia as suas atitudes, principalmente com relação à disciplina e controle.
+          </Span>
+
+          <PunctuationContainer>
+            <Punctuation>Sua pontuação: <SpanPunctuation>{behavioralPunctuation}</SpanPunctuation></Punctuation>
+
+            <PunctuationBar>
+              <PunctuationStatus style={{ width: `${behavioralPunctuation}%` }} />
+            </PunctuationBar>
+
+            <TotalScoreContainer>
+              <TotalScore>Pontuação máxima: <SpanPunctuation>100</SpanPunctuation></TotalScore>
+            </TotalScoreContainer>
+
           </PunctuationContainer>
         </SpanDescription>
       )

@@ -30,7 +30,10 @@ export function SplashOne() {
   }
 
   function handleNext() {
-    setProgress(progress + 1)
+    if (progress < 2) {
+      return setProgress(progress + 1)
+    }
+    return navigation.navigate('HomeOpenFinance')
   }
 
   return (
@@ -99,7 +102,13 @@ export function SplashOne() {
         <NextButton
           onPress={handleNext}
         >
-          <NextButtonTitle>CONTINUAR</NextButtonTitle>
+          <NextButtonTitle>
+            {progress === 2
+              ? 'COMEÇAR AGORA'
+              : 'CONTINUAR'
+            }
+
+          </NextButtonTitle>
         </NextButton>
 
         <JumpButton>
