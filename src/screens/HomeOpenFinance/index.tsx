@@ -1,9 +1,8 @@
 import { useState } from 'react'
 
-import { Ionicons } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
 
-import { Entypo, FontAwesome, AntDesign } from '@expo/vector-icons'
+import { Entypo, FontAwesome, AntDesign, Ionicons } from '@expo/vector-icons'
 
 import {
   Container,
@@ -47,6 +46,10 @@ export function HomeOpenFinance() {
     navigation.navigate('FinancialHealth')
   }
 
+  function handleGoToEconomyEmotion() {
+    navigation.navigate('EconomyEmotion')
+  }
+
   return (
     <Container>
       <Header>
@@ -72,7 +75,9 @@ export function HomeOpenFinance() {
           Além do controle e gerenciamento de um jeito fácil e seguro, aqui na XP você conta com as melhores dicas e ofertas para cultivar hábitos desejáveis de um bem estar financeiro.
         </BannerDescription>
 
-        <GenericButton>
+        <GenericButton
+          onPress={handleGoToEconomyEmotion}
+        >
 
           <ButtonContent>
             <IconContainer>

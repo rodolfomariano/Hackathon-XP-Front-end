@@ -8,6 +8,7 @@ import { FinancialHealth } from '../screens/FinancialHealth'
 import { Statistics } from '../screens/Statistics'
 import { SplashOne } from '../screens/SplashOne'
 import { HomeOpenFinance } from '../screens/HomeOpenFinance'
+import { EconomyEmotion } from '../screens/EconomyEmotion'
 
 export function StackRouters() {
   return (
@@ -39,6 +40,11 @@ export function StackRouters() {
       <Screen
         name="HomeOpenFinance"
         component={HomeOpenFinance}
+      />
+
+      <Screen
+        name="EconomyEmotion"
+        component={EconomyEmotion}
       />
     </Navigator>
   )
