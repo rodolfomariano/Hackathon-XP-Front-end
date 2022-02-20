@@ -8,8 +8,14 @@ import {
   Roboto_300Light,
   Roboto_400Regular,
   Roboto_500Medium,
-  Roboto_700Bold
+  Roboto_700Bold,
 } from '@expo-google-fonts/roboto'
+
+import {
+  Poppins_300Light,
+  Poppins_400Regular,
+  Poppins_500Medium
+} from '@expo-google-fonts/poppins'
 
 import theme from './src/global/styles/theme'
 
@@ -21,7 +27,10 @@ export default function App() {
     Roboto_300Light,
     Roboto_400Regular,
     Roboto_500Medium,
-    Roboto_700Bold
+    Roboto_700Bold,
+    Poppins_300Light,
+    Poppins_400Regular,
+    Poppins_500Medium
   })
 
   if (!fontsLoaded) {
@@ -31,8 +40,9 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar
+        style="light"
         translucent
-        backgroundColor='transparent'
+        backgroundColor='#121212'
       />
       <DataProvider>
         <Routes />

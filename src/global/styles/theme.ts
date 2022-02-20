@@ -6,6 +6,7 @@ export default {
     shape: '#1F1F1F',
     shape_200: '#3D3D3D',
     icons: '#EEC02C',
+    banner: '#3D3936',
 
     title: '#F7F7F7',
     text: '#CCCCCC',
@@ -18,6 +19,10 @@ export default {
     light: 'Roboto_300Light',
     regular: 'Roboto_400Regular',
     medium: 'Roboto_500Medium',
-    bold: 'Roboto_700Bold'
+    bold: 'Roboto_700Bold',
+    poppins_light: 'Poppins_300Light',
+    poppins_regular: 'Poppins_300Light',
+    poppins_medium: 'Poppins_300Light',
+    poppins_bold: 'Poppins_300Light',
   }
 }

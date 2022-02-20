@@ -5,6 +5,7 @@ const { Navigator, Screen } = createNativeStackNavigator()
 
 import { Home } from '../screens/Home'
 import { FinancialHealth } from '../screens/FinancialHealth'
+import { Statistics } from '../screens/Statistics'
 
 export function StackRouters() {
   return (
@@ -21,6 +22,11 @@ export function StackRouters() {
       <Screen
         name="FinancialHealth"
         component={FinancialHealth}
+      />
+
+      <Screen
+        name="Statistics"
+        component={Statistics}
       />
     </Navigator>
   )

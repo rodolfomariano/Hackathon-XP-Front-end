@@ -20,6 +20,55 @@ export const HeaderContainer = styled.View`
   justify-content: space-between;
 `
 
+export const Banner = styled.View`
+  width: 100%;
+  padding: 14px;
+  background-color: ${({ theme }) => theme.colors.banner};
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+`
+
+
+export const BannerActionContainer = styled.View`
+
+`
+
+export const BannerMessage = styled.View`
+  margin-bottom: 16px;
+`
+
+export const Message = styled.Text`
+  color: ${({ theme }) => theme.colors.title};
+  font-size: 16px;
+  font-family: ${({ theme }) => theme.fonts.regular};
+`
+
+export const StartButton = styled.TouchableOpacity`
+  width: 170px;
+  height: 40px;
+  background-color: ${({ theme }) => theme.colors.icons};
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const StartTitle = styled.Text`
+  font-size: 14px;
+  font-family: ${({ theme }) => theme.fonts.medium};
+  
+`
+
+export const ImageBanner = styled.Image`
+  width: 90px;
+  height: 100px;
+  margin-bottom: -14px;
+`
+
 export const UserContainer = styled.View`
   display: flex;
   flex-direction: row;
@@ -84,4 +133,23 @@ export const OpenFinanceButton = styled.TouchableOpacity`
 
 export const ButtonTitle = styled.Text`
   color: ${({ theme }) => theme.colors.icons};
+`
+
+export const OtherInstitutionsTitle = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.poppins_regular};
+  color: ${({ theme }) => theme.colors.title};
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+`
+
+export const ProductsContainer = styled.View`
+  margin-top: 32px;
+`
+
+export const OurProductsTitle = styled.Text`
+  color: ${({ theme }) => theme.colors.title};
+  font-size: 20px;
+  font-family: ${({ theme }) => theme.fonts.poppins_regular};
+  /* margin-bottom: 16px; */
 `
