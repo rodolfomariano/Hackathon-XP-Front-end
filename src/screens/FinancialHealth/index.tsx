@@ -38,7 +38,7 @@ export function FinancialHealth() {
 
   const { punctuation } = useData()
 
-  const data = [50, 10, 40, 95, 23]
+  const data = [punctuation, 100]
 
   const randomColor = () => ('#' + ((Math.random() * 0xffffff) << 0).toString(16) + '000000').slice(0, 7)
 

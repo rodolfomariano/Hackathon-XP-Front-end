@@ -16,7 +16,7 @@ interface DataContextPros {
 const DataContext = createContext<DataContextPros>({} as DataContextPros)
 
 function DataProvider({ children }: DataProviderProps) {
-  const [punctuation, setPunctuation] = useState(66)
+  const [punctuation, setPunctuation] = useState(35)
 
   return (
     // @ts-ignore
