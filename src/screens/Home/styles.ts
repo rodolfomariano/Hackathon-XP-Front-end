@@ -51,6 +51,7 @@ export const StartButton = styled.TouchableOpacity`
   width: 170px;
   height: 40px;
   background-color: ${({ theme }) => theme.colors.icons};
+  font-family: ${({ theme }) => theme.fonts.poppins_regular};
 
   display: flex;
   align-items: center;

@@ -1,6 +1,12 @@
+import { TouchableOpacityProps } from 'react-native'
 import styled from 'styled-components/native'
+import { RectButton } from "react-native-gesture-handler"
 
-export const Container = styled.TouchableOpacity`
+interface Card extends TouchableOpacityProps {
+
+}
+
+export const OpenButtonFinanceContainer = styled.TouchableOpacity`
   width: 100%;
 
   display: flex;

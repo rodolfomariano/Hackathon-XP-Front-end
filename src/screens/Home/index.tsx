@@ -31,8 +31,8 @@ import {
 export function Home() {
   const navigation = useNavigation()
 
-  function handleOpenMenu() {
-    navigation.navigate('FinancialHealth')
+  function handleOpenFinance() {
+    navigation.navigate('SplashOne')
   }
 
   function handleGoToStatistics() {
@@ -94,7 +94,9 @@ export function Home() {
         Outras instituições
       </OtherInstitutionsTitle>
 
-      <OpenButtonFinance />
+      <OpenButtonFinance
+        onPress={handleOpenFinance}
+      />
 
       <ProductsContainer>
         <OurProductsTitle>Nossos Produtos</OurProductsTitle>
@@ -129,6 +131,12 @@ export function Home() {
       >
         <ButtonTitle>Estatísticas</ButtonTitle>
       </OpenFinanceButton> */}
+
+      <OpenFinanceButton
+        onPress={handleGoToStatistics}
+      >
+        <ButtonTitle>Estatísticas</ButtonTitle>
+      </OpenFinanceButton>
 
     </Container>
   )

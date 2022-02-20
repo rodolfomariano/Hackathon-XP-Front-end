@@ -6,6 +6,7 @@ const { Navigator, Screen } = createNativeStackNavigator()
 import { Home } from '../screens/Home'
 import { FinancialHealth } from '../screens/FinancialHealth'
 import { Statistics } from '../screens/Statistics'
+import { SplashOne } from '../screens/SplashOne'
 
 export function StackRouters() {
   return (
@@ -17,6 +18,11 @@ export function StackRouters() {
       <Screen
         name="Home"
         component={Home}
+      />
+
+      <Screen
+        name="SplashOne"
+        component={SplashOne}
       />
 
       <Screen

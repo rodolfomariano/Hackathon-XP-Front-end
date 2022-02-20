@@ -1,8 +1,10 @@
 import React from 'react'
 import { Entypo } from '@expo/vector-icons'
 
+import { TouchableOpacityProps } from 'react-native'
+
 import {
-  Container,
+  OpenButtonFinanceContainer,
   Content,
   IconContainer,
   Icon,
@@ -11,9 +13,13 @@ import {
   Message,
 } from './styles'
 
-export function OpenButtonFinance() {
+interface OpenButtonFinanceProps extends TouchableOpacityProps {
+  onPress: () => void
+}
+
+export function OpenButtonFinance({ onPress, ...rest }: OpenButtonFinanceProps) {
   return (
-    <Container>
+    <OpenButtonFinanceContainer onPress={onPress} {...rest}>
       <Content>
         <IconContainer>
           <Icon
@@ -34,6 +40,6 @@ export function OpenButtonFinance() {
 
       <Entypo name="chevron-small-right" size={32} color="#F7F7F7" />
 
-    </Container>
+    </OpenButtonFinanceContainer>
   )
 }
