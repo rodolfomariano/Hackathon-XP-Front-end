@@ -2,7 +2,7 @@
 
 
 
-## :computer: Projeto desenvolvido para o hackathon idealizado pela XP
+### :computer: Projeto desenvolvido para o hackathon idealizado pela XP
 
 
 ## :satellite: Tecnologia
