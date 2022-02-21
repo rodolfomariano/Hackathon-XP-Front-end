@@ -16,7 +16,7 @@
 </ul>
 
 <p>
-  Demo do project: <a href="https://marvel-e-commerce.vercel.app/" target="_blank">Projeto no expo!</a>
+  Demo do project: <a href="https://expo.dev/@rodolfomariano/hackathon" target="_blank">Projeto no expo!</a>
 </p>
 
 
