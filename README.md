@@ -5,7 +5,7 @@
 ### :computer: Projeto desenvolvido para o hackathon idealizado pela XP
 
 
-## :satellite: Tecnologia
+## :satellite: Tecnologias
 
 <ul>
   <li>React Native</li>
