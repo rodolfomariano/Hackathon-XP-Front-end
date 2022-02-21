@@ -14,8 +14,14 @@
   <li>Expo</li>
 </ul>
 
+
+
 <p>
-  Demo do project: <a href="https://expo.dev/@rodolfomariano/hackathon" target="_blank">Projeto no expo!</a>
+  Demo do project: <a href="https://expo.dev/@rodolfomariano/hackathon" target="_blank">Projeto no expo.</a>
+</p>
+
+<p>
+  Api da XP: <a href="https://developer.xpinc.com/" target="_blank">link da api.</a>
 </p>
 
 
