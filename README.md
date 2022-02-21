@@ -2,13 +2,10 @@
 
 
 
-## :computer: Project
+## :computer: Projeto desenvolvido para o hackathon idealizado pela XP
 
-<h4>
-  Projeto desenvolvido para o hackathon idealizado pela XP
-</h4>
 
-## :satellite: Technologies
+## :satellite: Tecnologia
 
 <ul>
   <li>React Native</li>
