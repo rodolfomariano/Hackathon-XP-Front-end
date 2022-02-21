@@ -15,9 +15,12 @@
 </ul>
 
 
-
 <p>
   Demo do project: <a href="https://expo.dev/@rodolfomariano/hackathon" target="_blank">Projeto no expo.</a>
+</p>
+
+<p>
+  Back-end: <a href="https://github.com/AngeloSchulerPiletti/HackatonXP_API" target="_blank">link da api.</a>
 </p>
 
 <p>
