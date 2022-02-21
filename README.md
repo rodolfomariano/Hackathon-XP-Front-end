@@ -1,5 +1,10 @@
 <h1 align="center">Hackathon-XP-Front-end</h1>
 
+## :computer: Project
+
+<h4>
+  Projeto desenvolvido para o hackathon idealizado pela XP
+</h4>
 
 ## :satellite: Technologies
 
