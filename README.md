@@ -11,7 +11,7 @@
 
 <h2>Design proposto</h2>
 <p align="center">
-  <img width="90%" src="https://firebasestorage.googleapis.com/v0/b/imagens-3dce0.appspot.com/o/DesignPropost_min.svg?alt=media&token=24b1bdbd-5719-4238-bc22-83ec60461438">
+  <img width="70%" src="https://firebasestorage.googleapis.com/v0/b/imagens-3dce0.appspot.com/o/DesignPropost_min.svg?alt=media&token=24b1bdbd-5719-4238-bc22-83ec60461438">
 </p>
 
 
