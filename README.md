@@ -4,6 +4,16 @@
 
 ### :computer: Projeto desenvolvido para o hackathon idealizado pela XP
 
+<h2>Télas desenvolvidas</h2>
+<p align="center">
+  <img width="90%" src="https://firebasestorage.googleapis.com/v0/b/imagens-3dce0.appspot.com/o/telas.svg?alt=media&token=0bb564be-9892-4429-be62-55df89e785e1">
+</p>
+
+<h2>Design proposto</h2>
+<p align="center">
+  <img width="90%" src="https://firebasestorage.googleapis.com/v0/b/imagens-3dce0.appspot.com/o/DesignProposto.svg?alt=media&token=693e74e0-4615-4d15-bf72-06412a8ac282">
+</p>
+
 
 ## :satellite: Tecnologias
 
